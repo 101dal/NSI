@@ -1,4 +1,29 @@
-@media  (min-width: 768px) {
+#active {
+    color: white;
+}
+
+div.navbar {
+    background-color: #009485;
+    border: none;
+}
+
+#navtitletitle {
+    background-color: #009485;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display:inline-block;
+    font-size: 20px;
+    color: white;
+    height: 48px;
+    transition: box-shadow 0.1s;
+    -webkit-transition: box-shadow 0.1s;
+    -moz-transition: box-shadow 0.1s;
+    -ms-transition: box-shadow 0.1s;
+    -o-transition: box-shadow 0.1s;
+}
+
+@media  (min-width: 1218px) {
     #active {
         color: white;
     }
