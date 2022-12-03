@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>SNT & NSI Augustin</title>
+    <link href="assets/images/tabicon.png" rel="icon"/>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.js"></script>
+</head>
+
+<navbar>
+    <link rel="stylesheet" href="navbar.css">
+    <div class="navbar">
+        <div class="navtitletitle"><p class="navtitle">NSI Augustin</p></div>
+        <div class="nav">
+            <div>
+                <button onclick="redirect('home.html');" id="active" class="navitem">Home</button>
+            </div>
+            <div class="dropdownmenu">
+                <button class="dropdownbutton navitem">Exercice 7</button>
+                <div id="content">
+                    <button onclick="redirect('exercices/7/7.1.html');">Exercice 7.1</button>
+                    <button onclick="redirect('exercices/7/7.2.html');">Exercice 7.2</button>
+                    <button onclick="redirect('exercices/7/7.3.html');">Exercice 7.3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</navbar>
+
+<body>
+    <div id="pagecontent">
+        No page content
+    </div>
+</body>
+
+
+<script>
+    function redirect(content) {
+        $("#pagecontent").load(content)
+    }
+</script>
