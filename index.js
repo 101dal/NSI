@@ -16,3 +16,17 @@ $(document).ready(function(){
         console.log(scroll_pos)
     });
 });
+
+function daymode() {
+    $('.day').hide();
+    $('.night').show();
+    $('body').css('background-color', 'white')
+    $('.n').css('color', 'black')
+}
+
+function nightmode() {
+    $('.day').show();
+    $('.night').hide();
+    $('body').css('background-color', '#2e303e')
+    $('.n').css('color', 'white')
+}
