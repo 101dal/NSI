@@ -7,6 +7,7 @@ div.navbar {
     border: none;
 }
 
+/* definition of the top part of the navbar */
 #navtitletitle {
     background-color: #009485;
     position: fixed;
@@ -23,158 +24,132 @@ div.navbar {
     -o-transition: box-shadow 0.1s;
 }
 
-@media  (min-width: 1218px) {
-    #active {
-        color: white;
-    }
-
-    div.navbar {
-        background-color: #009485;
-        border: none;
-    }
-
-    /* definition of the top part of the navbar */
-    #navtitletitle {
-        background-color: #009485;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display:inline-block;
-        font-size: 20px;
-        color: white;
-        height: 48px;
-        transition: box-shadow 0.1s;
-        -webkit-transition: box-shadow 0.1s;
-        -moz-transition: box-shadow 0.1s;
-        -ms-transition: box-shadow 0.1s;
-        -o-transition: box-shadow 0.1s;
+    /*the icon to expand on phone*/
+#expandicon {
+    display: none;
 }
 
-    .navtitle {
-        display: inline-flex;
-        align-items: center;
-        font-family: "Roboto Medium";
-        font-size: 18px;
-        padding-left: 37px;
-        height: 48px;
-    }
-
-    .navicon {
-        height: 24px;
-        width: 24px;
-        display: block;
-    }
-
-    #daynightmode {
-        fill: white;
-        padding: 8px;
-        height: 24px;
-        width: 24px;
-        transition: fill 0.4;
-        -webkit-transition: fill 0.4;
-        -moz-transition: fill 0.4;
-        -ms-transition: fill 0.4;
-        -o-transition: fill 0.4;
-    }
-
-    #daynightmode:hover {
-        cursor: pointer;
-    }
-
-    .day {
-        display: none;
-    }
-
-    .night {
-        display: block;
-    }
-
-
-    /* the clickeable nav begins here */
-    .nav {
-        margin: 48px 0px 0px 4px;
-        display: flex;
-        height: 48px;
-        padding-left: 27px;
-    }
-
-    .parentdiv {
-        align-items: center;
-        padding-top: 16px;
-    }
-
-    .navitem {
-        margin-right: 10px;
-        font-family: "Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
-        font-size: 14px;
-        color: #b2dfda;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        transition: color 0.5s;
-        -webkit-transition: color 0.5s;
-        -moz-transition: color 0.5s;
-        -ms-transition: color 0.5s;
-        -o-transition: color 0.5s;
-        background-color: #009485;
-        width: auto;
-        border: none;
-        cursor: pointer;
-    }
-
-    .dropdownmenu {
-        display: inline-block;
-        text-align: center;
-        align-items: center;
-    }
-
-    .dropdownmenu #content {
-        margin-top: 10px;
-        display: none;
-        position:fixed;
-        background-color: #f1f1f1;
-        min-width: 120px;
-        box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
+.navtitle {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    padding-left: 37px;
+    height: 48px;
 }
 
-    #exo7 {
-        min-width: 120px;
-    }
+/* definition of the global icon rule*/
+.navicon {
+    height: 24px;
+    width: 24px;
+    display: block;
+}
 
-    .dropdownmenu #content button {
-        cursor: pointer;
-        min-width: 120px;
-        color: black;
-        padding: 10px;
-        text-decoration: none;
-        display: block;
-        border: 0;
-        border-radius: 5px;
-        transition: background-color 0.5s;
-        -webkit-transition: background-color 0.5s;
-        -moz-transition: background-color 0.5s;
-        -ms-transition: background-color 0.5s;
-        -o-transition: background-color 0.5s;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-    }
+/* definition of the light/dark mode icon rule*/
+#daynightmode {
+    fill: white;
+    padding: 8px;
+    height: 24px;
+    width: 24px;
+}
 
-    .dropdownmenu:hover #content {
-        display: block;
-    }
+#daynightmode:hover {
+    cursor: pointer;
+}
 
-    .dropdownmenu #content button:hover {
-        background-color: #ddd;
-    }
+.day {
+    display: none;
+}
 
-    .navitem:hover, .dropdownbutton:hover {
-        color: white;
-    }
+.night {
+    display: block;
+}
+
+
+/* the clickeable nav begins here */
+.nav {
+    margin: 48px 0px 0px 4px;
+    display: flex;
+    height: 48px;
+    padding-left: 27px;
+}
+
+.parentdiv {
+    align-items: center;
+    padding-top: 16px;
+}
+
+.navitem {
+    margin-right: 10px;
+    font-family: "Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #b2dfda;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    background-color: #009485;
+    width: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdownmenu {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+.dropdownmenu #content {
+    margin-top: 10px;
+    display: none;
+    position:fixed;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#exo7 {
+    min-width: 120px;
+}
+
+.dropdownmenu #content button {
+    cursor: pointer;
+    min-width: 120px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.dropdownmenu:hover #content {
+    display: block;
+}
+
+.dropdownmenu #content button:hover {
+    background-color: #ddd;
+}
+
+.navitem:hover, .dropdownbutton:hover {
+    color: white;
 }
