@@ -13,9 +13,16 @@
     <link rel="stylesheet" href="navbar.css">
     <div class="navbar">
         <div id="navtitletitle">
-            <label class="navicon" id="expandicon">
-                <svg viewBox="0px 0px 24px 24px" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height:24px;"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
-            </label>
+            <div style="float:left; display:flex;position: absolute;">
+                <label class="navicon" id="expandicon">
+                    <svg viewBox="0px 0px 24px 24px" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height:24px;"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+                </label>
+            </div>
+            <div style="float: left; display: flex;">
+                <label class="navicon" id="websiteicon">
+                    <svg viewBox="0px 0px 24px 24px" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height:24px;"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+                </label>
+            </div>
             <span class="navtitle">NSI Augustin</span>
             <div style="float: right; display: flex;">
                 <label class="navicon day" id="daynightmode" onclick="daymode();">
@@ -26,7 +33,7 @@
                 </label>
             </div>
         </div>
-        <div class="nav">
+        <div class="nav" id="hidewhensmall">
             <div class="parentdiv">
                 <button onclick="redirect('home.html');" id="active" class="navitem">Home</button>
             </div>

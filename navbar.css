@@ -1,3 +1,24 @@
+#hidewhensmall {
+    display: none;
+}
+
+#expandicon {
+    margin: 4px 4px 4px 8px;
+    fill: white;
+    padding: 8px;
+    height: 24px;
+    width: 24px;
+}
+
+#websiteicon {
+    display: none;
+    margin: 4px 4px 4px 8px;
+    fill: white;
+    padding: 8px;
+    height: 24px;
+    width: 24px;
+}
+
 #active {
     color: white;
 }
@@ -24,17 +45,12 @@ div.navbar {
     -o-transition: box-shadow 0.1s;
 }
 
-    /*the icon to expand on phone*/
-#expandicon {
-    display: none;
-}
-
 .navtitle {
     display: inline-flex;
     align-items: center;
     font-family: "Roboto Medium";
     font-size: 18px;
-    padding-left: 37px;
+    padding-left: 70px;
     height: 48px;
 }
 
@@ -71,7 +87,7 @@ div.navbar {
     margin: 48px 0px 0px 4px;
     display: flex;
     height: 48px;
-    padding-left: 27px;
+    padding-left: 7px;
 }
 
 .parentdiv {
@@ -152,4 +168,23 @@ div.navbar {
 
 .navitem:hover, .dropdownbutton:hover {
     color: white;
+}
+
+@media screen and (min-width: 1219px) {
+    /*the icon to expand on phone*/
+    #expandicon {
+        display: none;
+    }
+
+    #hidewhensmall {
+        display: flex;
+    }
+
+    .navtitle {
+        padding-left: 17px;
+    }
+
+    #websiteicon {
+        display: flex;
+    }
 }
