@@ -166,7 +166,7 @@ div.navbar {
     color: white;
 }
 
-@media screen and (min-width: 1219px) {
+@media screen and (min-width: 1220px) {
     /*the icon to expand on phone*/
     #expandicon {
         display: none;
