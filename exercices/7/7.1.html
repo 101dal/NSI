@@ -1,2 +1,92 @@
-<h1>Exercice 7 Activité</h1>
-<p class="">Voici le code de l'exercice 7.1 :</p>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Interactions homme-machine sur le web</title>
+    </head>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #313638;
+			font-family: "Roboto", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+		}
+		
+		main {
+			width: 700px;
+			margin: 1rem auto;
+			padding: 0 3rem;
+			background-color: #E0DFD5;
+			border: 1px solid black;
+			min-height: 400px;
+		}
+	
+		h1 {
+			text-align: center;
+		}
+		
+		form > * {
+			display: block;
+			margin: 1rem;
+		}
+	</style>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <main>
+            <h1>Mon formulaire</h1>
+            <form action="https://www.w3schools.com/action_page.php" method="post">
+                <label>Nom
+                    <input name="sub-nom" autocomplete="name" type="text" placeholder="Ex : Augustin" required>
+                </label>
+
+                <label>Prenom
+                    <input name="sub-prenom" autocomplete="firstname" type="text" placeholder="Ex : Michez" required>
+                </label>
+
+                <label>Vivant
+                    <input name="sub-vivant" autocomplete="alive" type="checkbox" required>
+                </label>
+
+                <label>Classe:
+                    S1<input name="sub-classeS1" autocomplete="name" type="radio">
+                    S2<input name="sub-classeS2" autocomplete="name" type="radio">
+                    S3<input name="sub-classeS3" autocomplete="name" type="radio">
+                    S4<input name="sub-classeS4" autocomplete="name" type="radio">
+                    S5<input name="sub-classeS5" autocomplete="name" type="radio">
+                    S6<input name="sub-classeS6" autocomplete="name" type="radio">
+                    S7<input name="sub-classeS7" autocomplete="name" type="radio">
+                    S8<input name="sub-classeS8" autocomplete="name" type="radio">
+                    S9<input name="sub-classeS9" autocomplete="name" type="radio">
+                    S10<input name="sub-classeS10" autocomplete="name" type="radio">
+                    S11<input name="sub-classeS111" autocomplete="name" type="radio">
+                </label>
+
+                <label>Mot de passe de ton pc
+                    <input name="sub-mdppc" autocomplete="mdp" type="password" placeholder="DONNEZ LE MDP" required>
+                </label>
+
+                <label>Quel jour est-on?
+                    <input name="sub-jour" autocomplete="day" type="date" required>
+                </label>
+
+                <button>Envoyer</button>
+            </form>
+            Background :  <input id="colorpicker1" name="sub-couleur1" autocomplete="color" type="color" oninput="changecolor();" value="#313638">
+            Formulaire :  <input id="colorpicker2" name="sub-couleur2" autocomplete="color" type="color" oninput="changecolor();" value="#E0DFD5">
+            Texte :  <input id="colorpicker3" name="sub-couleur2" autocomplete="color" type="color" oninput="changecolor();" value="#00000">
+
+            <script>
+                $("body").css("background-color", document.getElementById("colorpicker1").value)
+                $("main").css("background-color", document.getElementById("colorpicker2").value)
+                $("*").css("color", document.getElementById("colorpicker3").value)
+            </script>
+
+            <script>
+                function changecolor() {
+                    $("body").css("background-color", document.getElementById("colorpicker1").value)
+                    $("main").css("background-color", document.getElementById("colorpicker2").value)
+                    $("*").css("color", document.getElementById("colorpicker3").value)
+                }
+            </script>
+        </main>
+    </body>
+</html>
