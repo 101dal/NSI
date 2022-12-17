@@ -80,10 +80,15 @@ div.navbar {
 
 /* the clickeable nav begins here */
 .nav {
-    margin: 48px 0px 0px 4px;
+    margin: 0px 0px 0px 4px;
     display: flex;
     height: 48px;
     padding-left: 27px;
+    transition: margin 0.2s;
+    -webkit-transition: margin 0.2s;
+    -moz-transition: margin 0.2s;
+    -ms-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
 }
 
 .parentdiv {
@@ -172,12 +177,16 @@ div.navbar {
         display: none;
     }
 
+    #websiteicon {
+        margin: 4px 4px 4px 0px;
+    }
+
     #hidewhensmall {
         display: flex;
     }
 
     .navtitle {
-        padding-left: 22px;
+        padding-left: 0px;
     }
 
     #websiteicon {
@@ -186,5 +195,29 @@ div.navbar {
 
     #navtitletitle {
         box-shadow: none;
+        padding-left: 0px;
+        margin-left: 8px;
+        width: 1212px;
+    }
+
+    .navcontener {
+        padding-top: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .navbar {
+        width: 1200px;
+        margin: auto;
+        margin-left: 0;
+        display: block;
+        background-color: #009485;
+    }
+
+    .nav {
+        margin: 48px 0px 0px 0px;
+        padding-left: 0px;
+        margin-left: 9px;
+        width: 1216px;
     }
 }

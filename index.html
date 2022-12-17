@@ -1,60 +1,39 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNT & NSI Augustin</title>
-    <link href="assets/images/tabicon.png" rel="icon"/>
-    <link rel="stylesheet" href="index.css">
+    <link href="images/tabicon.png" rel="icon"/>
     <script src="jquery.js"></script>
     <script src="index.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
 </head>
 
+
+<header>
+    <nav>
+        <span>NSI & SNT Augustin</span>
+    </nav>
+</header>
 <nav>
-    <link rel="stylesheet" href="navbar.css">
-    <div class="navbar">
-        <div id="navtitletitle">
-            <div style="float:left; display:flex;position: absolute;">
-                <label class="navicon" id="expandicon">
-                    <svg viewBox="0px 0px 24px 24px" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height:24px;"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
-                </label>
-            </div>
-            <div style="float: left; display: flex;">
-                <label class="navicon" id="websiteicon">
-                    <svg viewBox="0px 0px 24px 24px" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height:24px;"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
-                </label>
-            </div>
-            <span class="navtitle">NSI Augustin</span>
-            <div style="float: right; display: flex;">
-                <label class="navicon day" id="daynightmode" onclick="daymode();">
-                    <svg viewBox="0px 0px 24px 24px" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height:24px;"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
-                </label>
-                <label class="navicon night" id="daynightmode" onclick="nightmode();">
-                    <svg viewBox="0px 0px 24px 24px" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height:24px;"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
-                </label>
-            </div>
-        </div>
-        <div class="nav" id="hidewhensmall">
-            <div class="parentdiv">
-                <button onclick="redirect('home.html');" id="active" class="navitem">Home</button>
-            </div>
-            <div class="dropdownmenu parentdiv" id="exo7">
-                <button class="dropdownbutton navitem" style="width: 120px;">Exercice 7</button>
-                <div id="content">
-                    <button onclick="redirect('exercices/7/7.1.html');">Exercice 7.1</button>
-                    <button onclick="redirect('exercices/7/7.2.html');">Exercice 7.2</button>
-                    <button onclick="redirect('exercices/7/7.3.html');">Exercice 7.3</button>
-                </div>
-            </div>
-        </div>
+    <div id="navitem">
+        <button onclick="redirect('home.html');">Home</button>
+    </div>
+    <div id="navitem">
+        <button onclick="redirect('SNT/main.html');">SNT</button>
+    </div>
+    <div id="navitem">
+        <button onclick="redirect('NSI/main.html');">NSI</button>
     </div>
 </nav>
-
-<body>
-    <link rel="stylesheet" href="content.css">
+<content>
     <article id="pagecontent">
-    </article>
-</body>
 
+    </article>
+</content>
+</html>
 <script>
-    redirect('home.html');
+    redirect("home.html");
 </script>
